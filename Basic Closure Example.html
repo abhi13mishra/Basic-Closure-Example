@@ -1,0 +1,10 @@
+<script>
+    function outerFunction(){
+let message = "hello world"
+return function innerFunction(){
+    console.log(message);
+}
+}
+let result = outerFunction()
+result()
+</script>
